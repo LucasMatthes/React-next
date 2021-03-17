@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  app:
+    container_name: newtec
+    image: lucasmatthes/tudo_nosso_nada_deles:1.0
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/var/www/html
+    stdin_open: true
+    tty: true
